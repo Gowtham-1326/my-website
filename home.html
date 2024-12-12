@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - Student-Alumni Platform</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: #2c3e50;
+      padding: 20px 0;
+      color: white;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2em;
+      letter-spacing: 1px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    nav ul li {
+      margin: 0 20px;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-size: 0.95em;
+      text-transform: uppercase;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #18bc9c;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-color: #3498db;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      border-radius: 8px;
+      margin-bottom: 40px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .hero h2 {
+      font-size: 2em;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .cta-btn {
+      background-color: #ffffff;
+      color: #1abc9c;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-size: 1em;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 20px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+      transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .cta-btn:hover {
+      background-color: #f4f4f4;
+      transform: translateY(-3px);
+    }
+
+    /* Section Styling */
+    section {
+      background-color: #fff;
+      padding: 50px;
+      margin-bottom: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    section h2 {
+      font-size: 1.8em;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    section p {
+      font-size: 1em;
+      margin-bottom: 15px;
+    }
+
+    .benefits ul, .events ul {
+      padding-left: 20px;
+    }
+
+    .benefits ul li, .events ul li {
+      font-size: 1.1em;
+      margin: 10px 0;
+      list-style: none;
+    }
+
+    /* Testimonials Styling */
+    .testimonials .testimonial {
+      display: flex;
+      align-items: center;
+      background-color: #f9f9f9;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      font-size: 1em;
+      transition: transform 0.3s ease;
+    }
+
+    .testimonial img {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      margin-right: 20px;
+    }
+
+    .testimonial:hover {
+      transform: translateY(-5px);
+    }
+
+    .testimonial blockquote {
+      font-style: italic;
+      color: #7f8c8d;
+    }
+
+    /* Alumni Cards */
+    .alumni-cards .cards-container {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #fff;
+      padding: 20px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+      width: 30%;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .profile-img img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 15px;
+      background-size: contain;
+    }
+
+    .card h3 {
+      font-size: 1.2em;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background-color: #2c3e50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 0.9em;
+    }
+
+    footer a {
+      color: #18bc9c;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>STUDENT ALUMNI PLATFORM</h1>
+    <nav>
+      <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="features.html">FEATURES</a></li>
+        <li><a href="signup.html">SIGN UP</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <h2>Empowering Connections for Future Success</h2>
+      <p>Unlock new opportunities for career growth, mentorship, and collaboration by connecting with alumni and fellow students.</p>
+      <a href="signup.html" class="cta-btn">Join Us Now</a>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about">
+      <h2>About Us</h2>
+      <p>Our mission is to bridge the gap between students and alumni, creating a dynamic ecosystem where mentorship, collaboration, and career growth thrive. We empower students by providing a network of experienced professionals to guide them through the next stages of their careers.</p>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+      <h2>Why Join Our Platform?</h2>
+      <ul>
+        <li>🌟 Access to a global network of industry professionals.</li>
+        <li>🤝 Build long-lasting professional connections.</li>
+        <li>📚 Exclusive mentorship and career development resources.</li>
+        <li>🌍 Be part of a dynamic and diverse alumni community.</li>
+      </ul>
+    </section>
+
+    <!-- Upcoming Events Section -->
+    <section class="events">
+      <h2>Upcoming Events</h2>
+      <ul>
+        <li>🎉 <strong>Annual Alumni Reunion</strong> - December 15, 2024</li>
+        <li>📝 <strong>Career Development Workshop</strong> - January 10, 2025</li>
+        <li>👩‍💻 <strong>Tech Industry Panel Discussion</strong> - February 20, 2025</li>
+      </ul>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+      <h2>What Our Members Say</h2>
+      <div class="testimonial">
+        <img src="images/kal.jpg" alt="John Doe">
+        <div>
+          <blockquote>"This platform helped me connect with a mentor who guided me in launching my career successfully." </blockquote>
+          <p>- John Doe, Class of 2015</p>
+        </div>
+      </div>
+      <div class="testimonial">
+        <img src="images/swe.jpg" alt="Jane Smith">
+        <div>
+          <blockquote>"The alumni network was invaluable in helping me grow both professionally and personally." </blockquote>
+          <p>- Jane Smith, Class of 2012</p>
+        </div>
+      </div>
+      <div class="testimonial">
+        <img src="images/paw.jpg" alt="Alex Johnson">
+        <div>
+          <blockquote>"Being a part of this community has opened many doors for me and my career." </blockquote>
+          <p>- Alex Johnson, Class of 2018</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Alumni Cards Section -->
+    <section class="alumni-cards">
+      <h2>Meet Our Alumni</h2>
+      <div class="cards-container">
+        <div class="card">
+          <div class="profile-img">
+            <img src="images/th.jpg" alt="David Kim">
+          </div>
+          <h3>VIJAY</h3>
+          <p>Founder & CEO at AI Solutions.</p>
+        </div>
+        <div class="card">
+          <div class="profile-img">
+            <img src="images/k1.jpg" alt="Maria Perez">
+          </div>
+          <h3>KALYAN</h3>
+          <p>Senior Project Manager at Global IT Consulting.</p>
+        </div>
+        <div class="card">
+          <div class="profile-img">
+            <img src="images/k2.jpg" alt="John Williams">
+          </div>
+          <h3>MAHESH</h3>
+          <p>Strategic Business Advisor.</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Student-Alumni Platform. All Rights Reserved.</p>
+    <p><a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-conditions.html">Terms & Conditions</a></p>
+  </footer>
+
+  <script>
+    // Example JS for interactivity
+    const btn = document.querySelector('.cta-btn');
+    btn.addEventListener('mouseover', () => {
+      btn.style.backgroundColor = '#e2f7f1';
+    });
+    btn.addEventListener('mouseout', () => {
+      btn.style.backgroundColor = '#ffffff';
+    });
+  </script>
+</body>
+</html>

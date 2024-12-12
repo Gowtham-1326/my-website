@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Student-Alumni Platform</title>
+
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f5f7;
+      color: #4a4a4a;
+      line-height: 1.6;
+      padding: 0;
+      margin: 0;
+    }
+
+    /* Header Styles */
+    header {
+      background-color: #34495e;
+      color: #ecf0f1;
+      padding: 15px 40px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 28px;
+      font-weight: 600;
+    }
+
+    nav {
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #ecf0f1;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #3498db;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-color: #3498db;
+      color: white;
+      padding: 60px 30px;
+      text-align: center;
+      max-width: 100%;
+    }
+
+    .hero h2 {
+      font-size: 36px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 16px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      margin-bottom: 30px;
+    }
+
+    .cta-btn {
+      background-color: #2980b9;
+      color: white;
+      padding: 12px 28px;
+      font-size: 16px;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s;
+    }
+
+    .cta-btn:hover {
+      background-color: #1c598d;
+    }
+
+    /* Alumni Section */
+    .alumni-cards {
+      padding: 60px 20px;
+      text-align: center;
+      background-color: #ecf0f1;
+    }
+
+    .alumni-cards h2 {
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 40px;
+    }
+
+    .cards-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .card {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+      width: 280px;
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .profile-img img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 14px;
+      color: #7f8c8d;
+      margin-bottom: 15px;
+    }
+
+    /* Footer Section */
+    footer {
+      background-color: #34495e;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 60px;
+    }
+
+    /* Keyframe Animations */
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 28px;
+      }
+
+      .hero p {
+        font-size: 14px;
+        margin-bottom: 20px;
+      }
+
+      .cards-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .cta-btn {
+        font-size: 14px;
+        padding: 10px 24px;
+      }
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>STUDENT ALUMNI PLATFORM</h1>
+    <nav>
+      <a href="home.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="features.html">FEATURES</a>
+      <a href="signup.html">SIGN UP</a>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <h2>CONNECTING STUDENTS AND ALUMNI</h2>
+      <p>Our platform provides a seamless connection between students and alumni to foster mentorship, career opportunities, and knowledge sharing.</p>
+      <p>Whether you are seeking career guidance, networking, or collaborations, our alumni community offers valuable expertise to help you succeed in your journey.</p>
+      <a href="signup.html" class="cta-btn">Get Started</a>
+    </section>
+
+    <!-- Alumni Cards Section -->
+    <section class="alumni-cards">
+      <h2>Meet Our Alumni</h2>
+      <div class="cards-container">
+        <!-- Alumni 1 -->
+        <div class="card">
+          <div class="profile-img">
+            <img src="images/paw.jpg" alt="Kalyan Babu">
+          </div>
+          <h3>KEVIN</h3>
+          <p>Kalyan is a successful tech entrepreneur and philanthropist. He founded a startup that became a global leader in its field, inspiring others to innovate and excel.</p>
+        </div>
+        <!-- Alumni 2 -->
+        <div class="card">
+          <div class="profile-img">
+            <img src="images/swe.jpg" alt="Mahesh Babu">
+          </div>
+          <h3>EMMA</h3>
+          <p>Mahesh, a visionary entrepreneur, sold his tech startup to a major industry player. Today, he focuses on mentoring young entrepreneurs and supporting social causes.</p>
+        </div>
+        <!-- Alumni 3 -->
+        <div class="card">
+          <div class="profile-img">
+            <img src="images/kal.jpg" alt="Vijay">
+          </div>
+          <h3>JOSH</h3>
+          <p>Vijay is an award-winning software architect who has contributed to some of the most impactful tech solutions in the healthcare and fintech sectors.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Student-Alumni Platform. All Rights Reserved.</p>
+  </footer>
+
+  <script>
+    // Hover effect for alumni profile images
+    const cards = document.querySelectorAll('.card');
+    cards.forEach(card => {
+      card.addEventListener('mouseover', () => {
+        card.querySelector('img').style.transform = 'scale(1.05)';
+      });
+      card.addEventListener('mouseout', () => {
+        card.querySelector('img').style.transform = 'scale(1)';
+      });
+    });
+  </script>
+
+</body>
+</html>
